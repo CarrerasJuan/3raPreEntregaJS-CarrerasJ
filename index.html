@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Tienda de Ecommerce</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <h1 class="logo">WebShopJECARR</h1>
+        <nav class="navegacion">
+            <a href="#">Inicio</a>
+            <a href="#">Contacto</a>
+            <a href="#">Servicio</a>
+
+            <button class="btn">Iniciar Sesión</button>
+            <button class="btn" id="verCarrito"><i class="fa-solid fa-cart-shopping"></i></button>
+        </nav>
+    </header>
+<!-- INICIO DE SESION -->
+    <div class="fondo">
+        <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
+     <div class="contenedor-form login">
+        <h2>Iniciar Sesión</h2>
+        <form action="#">
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required>
+                <label for="#">Email</label>
+            </div>
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required>
+                <label for="#">Contraseña</label>
+            </div>
+
+            <div class="recordar">
+                <label for="#"><input type="checkbox">Recordar Sesión</label>
+                <a href="#">¿Olvidaste tu Contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn">Iniciar Sesión</button>
+
+            <div class="registrar">
+                <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
+            </div>
+
+        </form>
+     </div>
+     
+     <div class="contenedor-form registrar">
+        <h2>Registrarse</h2>
+        <form action="#">
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-user"></i></span>
+                <input type="text" required>
+                <label for="#">Nombre de Usuario</label>
+            </div>
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required>
+                <label for="#">Email</label>
+            </div>
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required>
+                <label for="#">Contraseña</label>
+            </div>
+
+            <div class="recordar">
+                <label for="#"><input type="checkbox"> Acepto los terminos y condiciones</label>
+                <button type="submit" class="btn"> Registrarme </button>
+            <div class="registrar">
+                <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+            </div>    
+            </div>
+        </form>
+     </div> 
+    </div>
+    <!-- SHOP CONTENIDO -->
+    <div id="shopContent" class="shop-content"></div>
+    <!-- Modal Container -->
+    <div id="modal-container" class="modal-container"></div>
+    <!-- SCRIPT DE JS -->
+    <script src="/js/main.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/tienda.js"></script>
+    <!-- FAVICON SCRIPT -->
+    <script src="https://kit.fontawesome.com/69cdbd6d41.js" crossorigin="anonymous"></script>
+</body>
+</html>
